@@ -386,8 +386,7 @@ def doTest(test):
                 raise ValueError("bad test line at {}".format(line_num))
     finally:
         if not keep:
-            a=1
-            #cleanTempDir(tmpdir)
+            cleanTempDir(tmpdir)
 
 if __name__ == "__main__":
     show = None
